@@ -1,0 +1,27 @@
+[user]
+	email = mdlawson@gmx.com
+	name = Michael Lawson
+[push]
+	default = matching
+[alias]
+	s = status
+	a = !git add . && git status
+	c = commit
+	cm = commit -m
+	pu = pull
+	pr = pull --rebase
+	p = push
+	ri = rebase -i
+	l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+	ll = log --stat --abbrev-commit
+	d = diff --color-words
+	amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
+	ignore = !([ ! -e .gitignore ] && touch .gitignore) | echo $1 >> .gitignore
+	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+[color]
+	ui = auto
+	interactive = auto
+[merge]
+	tool = meld
+[diff]
+	tool = meld

@@ -1,0 +1,3 @@
+pane	General	1	:zsh	1	:*	1	:/home/michael	1	zsh	:
+window	General	1	1	:*	ae5d,80x23,0,0,0
+state	General	
